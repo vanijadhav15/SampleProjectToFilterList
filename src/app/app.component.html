@@ -1,0 +1,12 @@
+<div class="container" >
+  <h1>Sample Page</h1>
+  <div class="searchHeader">Github Search</div>
+  <input matInput  class="filterInput" [(ngModel)]="filterText">
+  <ng-container *ngFor="let repository of repositories">
+    <mat-card *ngIf="repository.name.indexOf(filterText)>0">
+      <mat-label>{{repository.node_id}}</mat-label>
+      <span>{{repository.name}}</span>
+    </mat-card>
+  </ng-container>
+
+</div>

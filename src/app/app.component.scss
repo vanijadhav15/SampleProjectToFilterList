@@ -1,0 +1,21 @@
+.searchHeader{
+    background-color: black;
+    color: blanchedalmond;
+}
+h1{
+    align-self: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+:host{
+    height: 100%
+}
+.filterInput {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ mat-card{
+    border: 1px solid grey
+}
